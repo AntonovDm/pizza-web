@@ -110,7 +110,7 @@ export async function action({ request }) {
   const newOrder = await createOrder(order)
 
   return redirect(`/order/${newOrder.id}`)
-  // если мы вернем новый ответ, то маршрутизатор атоматечески перейдет по адресу, указанному в redirect()
+  // если мы вернем новый ответ, то маршрутизатор атоматически перейдет по адресу, указанному в redirect()
 }
 
 export default CreateOrder
